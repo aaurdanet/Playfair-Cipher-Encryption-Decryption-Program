@@ -34,17 +34,17 @@ How It Works
 
 Functions Overview
 
-    print_stylized_text(): Prints a stylized banner.
-    print_grid(matrix): Displays the 5x5 grid matrix.
-    create_grid(key): Generates the 5x5 grid matrix based on the key.
-    box_case(), column_case(), row_case(): Handle different Playfair cipher cases.
-    padding_case(): Adds necessary padding for encryption and handles removing padding during decryption.
-    encrypt(): Encrypts a pair of characters using the Playfair cipher.
-    decrypt(): Decrypts a pair of characters using the Playfair cipher.
-    find_in_matrix(): Finds the row and column of a character in the grid.
-    start_encryption(): Initiates the encryption process.
-    start_decryption(): Initiates the decryption process.
-    revert_j(): Reverts any "j" in the text back to "i" after decryption.
+        print_stylized_text(): Prints a stylized banner.
+        print_grid(matrix): Displays the 5x5 grid matrix.
+        create_grid(key): Generates the 5x5 grid matrix based on the key.
+        box_case(), column_case(), row_case(): Handle different Playfair cipher cases.
+        padding_case(): Adds necessary padding for encryption and handles removing padding during decryption.
+        encrypt(): Encrypts a pair of characters using the Playfair cipher.
+        decrypt(): Decrypts a pair of characters using the Playfair cipher.
+        find_in_matrix(): Finds the row and column of a character in the grid.
+        start_encryption(): Initiates the encryption process.
+        start_decryption(): Initiates the decryption process.
+        revert_j(): Reverts any "j" in the text back to "i" after decryption.
 
 Usage
 
@@ -58,24 +58,4 @@ Usage
         Input the ciphertext message.
         The program will output the original plaintext message.
 
-Example
 
-bash
-
-Enter key for encryption:
-playfair
-    +---------------------------+
-    |        GRID MATRIX        |
-    +---------------------------+
-    | ['p', 'l', 'a', 'y', 'f'] |
-    | ['i', 'r', 'b', 'c', 'd'] |
-    | ['e', 'g', 'h', 'k', 'm'] |
-    | ['n', 'o', 'q', 's', 't'] |
-    | ['u', 'v', 'w', 'x', 'z'] |
-    +---------------------------+
-    |         Playfair          |
-    +---------------------------+
-
-Enter text you want to encrypt:
-hello
-Ciphertext: kcqls
